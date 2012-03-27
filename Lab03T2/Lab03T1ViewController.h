@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
 @interface Lab03T1ViewController : UIViewController
+{
+    IBOutlet UITextField *operand1;
+    IBOutlet UITextField *operand2;
+    IBOutlet UITextField *urAnswer;
+    IBOutlet UISegmentedControl *oper;
+}
 
+-(void)insertRecord;
 @end

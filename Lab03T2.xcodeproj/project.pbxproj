@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631D37271509EC33005D6753 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = 631D37251509EC33005D6753 /* History.m */; };
+		631D37281509EC33005D6753 /* History.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631D37261509EC33005D6753 /* History.xib */; };
 		63B694AD14FB388B009E2895 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B694AC14FB388B009E2895 /* UIKit.framework */; };
 		63B694AF14FB388B009E2895 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B694AE14FB388B009E2895 /* Foundation.framework */; };
 		63B694B114FB388B009E2895 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B694B014FB388B009E2895 /* CoreGraphics.framework */; };
@@ -15,22 +17,40 @@
 		63B694BD14FB388B009E2895 /* Lab03T1AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B694BC14FB388B009E2895 /* Lab03T1AppDelegate.m */; };
 		63B694C014FB388B009E2895 /* Lab03T1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B694BF14FB388B009E2895 /* Lab03T1ViewController.m */; };
 		63B694C314FB388B009E2895 /* Lab03T1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B694C114FB388B009E2895 /* Lab03T1ViewController.xib */; };
+		63B694CE14FB3B77009E2895 /* Arithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B694CD14FB3B77009E2895 /* Arithmetic.m */; };
+		63B694D214FB4E48009E2895 /* MyAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B694D014FB4E48009E2895 /* MyAnswer.m */; };
+		63B694D314FB4E48009E2895 /* MyAnswer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B694D114FB4E48009E2895 /* MyAnswer.xib */; };
+		63B694D714FB6187009E2895 /* Statistic.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B694D514FB6187009E2895 /* Statistic.m */; };
+		63B694D814FB6187009E2895 /* Statistic.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63B694D614FB6187009E2895 /* Statistic.xib */; };
+		99DDC7C615163AA700564F67 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DDC7C515163AA700564F67 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		631D37241509EC33005D6753 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		631D37251509EC33005D6753 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
+		631D37261509EC33005D6753 /* History.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = History.xib; sourceTree = "<group>"; };
 		63B694A814FB388B009E2895 /* Lab03T2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab03T2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B694AC14FB388B009E2895 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63B694AE14FB388B009E2895 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63B694B014FB388B009E2895 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		63B694B414FB388B009E2895 /* Lab03T2-Info.plist */ = {isa = PBXFileReference; path = "Lab03T2-Info.plist"; sourceTree = "<group>"; };
+		63B694B414FB388B009E2895 /* Lab03T2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lab03T2-Info.plist"; sourceTree = "<group>"; };
 		63B694B614FB388B009E2895 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63B694B814FB388B009E2895 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63B694BA14FB388B009E2895 /* Lab03T2-Prefix.pch */ = {isa = PBXFileReference; path = "Lab03T2-Prefix.pch"; sourceTree = "<group>"; };
-		63B694BB14FB388B009E2895 /* Lab03T1AppDelegate.h */ = {isa = PBXFileReference; path = Lab03T1AppDelegate.h; sourceTree = "<group>"; };
+		63B694BA14FB388B009E2895 /* Lab03T2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lab03T2-Prefix.pch"; sourceTree = "<group>"; };
+		63B694BB14FB388B009E2895 /* Lab03T1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab03T1AppDelegate.h; sourceTree = "<group>"; };
 		63B694BC14FB388B009E2895 /* Lab03T1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab03T1AppDelegate.m; sourceTree = "<group>"; };
-		63B694BE14FB388B009E2895 /* Lab03T1ViewController.h */ = {isa = PBXFileReference; path = Lab03T1ViewController.h; sourceTree = "<group>"; };
+		63B694BE14FB388B009E2895 /* Lab03T1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lab03T1ViewController.h; sourceTree = "<group>"; };
 		63B694BF14FB388B009E2895 /* Lab03T1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab03T1ViewController.m; sourceTree = "<group>"; };
 		63B694C214FB388B009E2895 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Lab03T1ViewController.xib; sourceTree = "<group>"; };
+		63B694CC14FB3B77009E2895 /* Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arithmetic.h; sourceTree = "<group>"; };
+		63B694CD14FB3B77009E2895 /* Arithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arithmetic.m; sourceTree = "<group>"; };
+		63B694CF14FB4E48009E2895 /* MyAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnswer.h; sourceTree = "<group>"; };
+		63B694D014FB4E48009E2895 /* MyAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnswer.m; sourceTree = "<group>"; };
+		63B694D114FB4E48009E2895 /* MyAnswer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAnswer.xib; sourceTree = "<group>"; };
+		63B694D414FB6187009E2895 /* Statistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Statistic.h; sourceTree = "<group>"; };
+		63B694D514FB6187009E2895 /* Statistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Statistic.m; sourceTree = "<group>"; };
+		63B694D614FB6187009E2895 /* Statistic.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Statistic.xib; sourceTree = "<group>"; };
+		99DDC7C515163AA700564F67 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DDC7C615163AA700564F67 /* libsqlite3.dylib in Frameworks */,
 				63B694AD14FB388B009E2895 /* UIKit.framework in Frameworks */,
 				63B694AF14FB388B009E2895 /* Foundation.framework in Frameworks */,
 				63B694B114FB388B009E2895 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +71,7 @@
 		63B6949D14FB388B009E2895 = {
 			isa = PBXGroup;
 			children = (
+				99DDC7C515163AA700564F67 /* libsqlite3.dylib */,
 				63B694B214FB388B009E2895 /* Lab03T2 */,
 				63B694AB14FB388B009E2895 /* Frameworks */,
 				63B694A914FB388B009E2895 /* Products */,
@@ -83,6 +105,17 @@
 				63B694BF14FB388B009E2895 /* Lab03T1ViewController.m */,
 				63B694C114FB388B009E2895 /* Lab03T1ViewController.xib */,
 				63B694B314FB388B009E2895 /* Supporting Files */,
+				63B694CC14FB3B77009E2895 /* Arithmetic.h */,
+				63B694CD14FB3B77009E2895 /* Arithmetic.m */,
+				63B694CF14FB4E48009E2895 /* MyAnswer.h */,
+				63B694D014FB4E48009E2895 /* MyAnswer.m */,
+				63B694D114FB4E48009E2895 /* MyAnswer.xib */,
+				63B694D414FB6187009E2895 /* Statistic.h */,
+				63B694D514FB6187009E2895 /* Statistic.m */,
+				63B694D614FB6187009E2895 /* Statistic.xib */,
+				631D37241509EC33005D6753 /* History.h */,
+				631D37251509EC33005D6753 /* History.m */,
+				631D37261509EC33005D6753 /* History.xib */,
 			);
 			path = Lab03T2;
 			sourceTree = "<group>";
@@ -150,6 +183,9 @@
 			files = (
 				63B694B714FB388B009E2895 /* InfoPlist.strings in Resources */,
 				63B694C314FB388B009E2895 /* Lab03T1ViewController.xib in Resources */,
+				63B694D314FB4E48009E2895 /* MyAnswer.xib in Resources */,
+				63B694D814FB6187009E2895 /* Statistic.xib in Resources */,
+				631D37281509EC33005D6753 /* History.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +199,10 @@
 				63B694B914FB388B009E2895 /* main.m in Sources */,
 				63B694BD14FB388B009E2895 /* Lab03T1AppDelegate.m in Sources */,
 				63B694C014FB388B009E2895 /* Lab03T1ViewController.m in Sources */,
+				63B694CE14FB3B77009E2895 /* Arithmetic.m in Sources */,
+				63B694D214FB4E48009E2895 /* MyAnswer.m in Sources */,
+				63B694D714FB6187009E2895 /* Statistic.m in Sources */,
+				631D37271509EC33005D6753 /* History.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +312,7 @@
 				63B694C814FB388B009E2895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,25 +10,95 @@
 
 #import "Lab03T1ViewController.h"
 
+#import "MyAnswer.h"
+#import "Statistic.h"
+#import "History.h"
+
 @implementation Lab03T1AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize a;
+@synthesize urAnswer;
+@synthesize CorrectCount;
+@synthesize WrongCount;
+@synthesize history;
+@synthesize correctArray, wrongArray;
+@synthesize tableArray;
+@synthesize db;
 
 - (void)dealloc
 {
+    [navController release];
     [_window release];
     [_viewController release];
     [super dealloc];
 }
 
+-(NSString *)filePath:(NSString *)fileName{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *fileDirectory = [[paths objectAtIndex:0] stringByAppendingPathComponent:fileName];
+    NSLog(@"%@", fileDirectory);
+    return fileDirectory;
+}
+
+-(void)openDB{
+    if(sqlite3_open([[self filePath:@"db1.sql"] UTF8String], &db) != SQLITE_OK){
+        sqlite3_close(db);
+        NSAssert(0,@"Database filed to open.");
+    }
+}
+
+-(void)createTable:(NSString *)field1 field2:(NSString *)field2 field3:(NSString *)field3{
+    char *error;
+
+    NSString *sql = [NSString stringWithFormat:@"create table if not exists arithmetic ('%@' integer primary key, '%@' text, '%@' int);", field1, field2, field3];
+    if(sqlite3_exec(db,[sql UTF8String], NULL, NULL, &error)){
+        sqlite3_close(db);
+        NSAssert(0,@"Table failed to create.");
+    }
+}
+
+-(void)addCorrect:(NSString *)expr{
+    [correctArray addObject:expr];
+}
+
+-(void)addWrong:(NSString *)expr{    
+    [wrongArray addObject:expr];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+{    
+    [self openDB];
+    [self createTable:@"aid" field2:@"result" field3:@"correct"];
+    //correctArray = [[NSMutableArray alloc] init];
+    //wrongArray = [[NSMutableArray alloc] init];
+    //tableArray = [[NSArray alloc] initWithObjects:correctArray, wrongArray, nil];
+    
+    CorrectCount = 0;
+    WrongCount = 0;
+    a = [[Arithmetic alloc] init];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[Lab03T1ViewController alloc] initWithNibName:@"Lab03T1ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    Lab03T1ViewController *begin = [[Lab03T1ViewController alloc] init];
+    navController = [[UINavigationController alloc] init];
+    [navController pushViewController:begin animated:NO];
+    navController.title=@"Calculate";
+    
+    
+    Statistic *statistic = [[Statistic alloc] init];
+    statistic.title=@"Statistic";
+    History *history = [[History alloc]init];
+    history.title=@"History";
+    tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:navController, statistic, history,nil];
+    [self.window addSubview:tabBarController.view];
+    //self.window.rootViewController = self.viewController;
+    
     [self.window makeKeyAndVisible];
+    [begin release];
+    [statistic release];
     return YES;
 }
 
